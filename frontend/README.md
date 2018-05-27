@@ -1,7 +1,7 @@
-# Nachbar App Frontend
+# Nachbar Frontend
 
 ## Wie man es zum laufen bringt: 
 
-    cd nachbarapp
+    cd nachbar
     npm install
     npm start
