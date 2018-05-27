@@ -17,7 +17,7 @@ import JobGrid from './jobGrid.js'
 const styles = theme => ({
   root: {
     textAlign: 'center',
-    paddingTop: theme.spacing.unit * 20,
+    paddingTop: theme.spacing.unit * 8,
   },
   flex: {
     flex: 1,
@@ -65,10 +65,10 @@ class Index extends React.Component {
     </AppBar>;
 
     return (
-      <div className={classes.root}>
-    {appbar}
-    <JobGrid/>
-      </div>
+    <div className={classes.root}>
+      {appbar}
+      <JobGrid/>
+    </div>
     );
   }
 }

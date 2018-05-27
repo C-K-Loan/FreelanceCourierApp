@@ -5,6 +5,7 @@ import Paper from '@material-ui/core/Paper';
 import AppBar from '@material-ui/core/AppBar';
 import Typography from '@material-ui/core/Typography';
 import Toolbar from '@material-ui/core/Toolbar';
+import Grid from '@material-ui/core/Grid';
 
 const styles = theme => ({
   root: {
@@ -16,6 +17,9 @@ const styles = theme => ({
     color: theme.palette.text.secondary,
     height: "400px"
   },
+  content: {
+    paddingTop: theme.spacing.unit * 2
+  }
 });
 
 class JobTile extends React.Component {
@@ -25,17 +29,22 @@ class JobTile extends React.Component {
   render() {
     const { classes } = this.props;
     const title = this.props.title;
-    
+
     return (
-      <Paper className={classes.paper}>
-        <AppBar position="static" color="default">
-          <Toolbar>
-            <Typography variant="headline" color="inherit">
-              {title}
-            </Typography>
-          </Toolbar>
-        </AppBar>
-      </Paper>
+      <Grid item xs={12} sm={6} lg={4}>
+        <Paper className={classes.paper}>
+          <AppBar position="static" color="default">
+            <Toolbar>
+              <Typography variant="title" color="inherit">
+                {title}
+              </Typography>
+            </Toolbar>
+          </AppBar>
+          <Typography className={classes.content} variant="body1" color="inherit">
+            Beispiel Content
+          </Typography>
+        </Paper>
+      </Grid>
     );
   }
 }

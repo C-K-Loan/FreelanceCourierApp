@@ -14,18 +14,11 @@ const styles = theme => ({
     color: theme.palette.text.secondary,
     height: "400px"
   },
-  control: {
-    padding: theme.spacing.unit * 2,
-  },
   JobGrid: {
-    padding: "24px",
+    padding: theme.spacing.unit * 4,
     margin: 0,
     width: '100%',
   },
-  // gridList: {
-  //   width: "100%",
-  //   height: 450,
-  // }
 });
 
 class JobGrid extends React.Component {
@@ -44,43 +37,14 @@ class JobGrid extends React.Component {
     return (
       <div className={classes.root}>
         <Grid container spacing={24} className={classes.JobGrid}>
-          <Grid item xs={12} sm={4}>
             <JobTile title="Beispiel 1"/>
-          </Grid>
-          <Grid item xs={12} sm={4}>
             <JobTile title="Beispiel 2"/>
-          </Grid>
-          <Grid item xs={12} sm={4}>
             <JobTile title="Beispiel 3"/>
-          </Grid>
-          <Grid item xs={12} sm={4}>
             <JobTile title="Beispiel 4"/>
-          </Grid>
-          <Grid item xs={12} sm={4}>
             <JobTile title="Beispiel 5"/>
-          </Grid>
-          <Grid item xs={12} sm={4}>
             <JobTile title="Beispiel 6"/>
-          </Grid>
-          <Grid item xs={12} sm={4}>
             <JobTile title="Beispiel 7"/>
-          </Grid>
         </Grid>
-        {/* <div className={classes.root}>
-          <Grid container spacing={24} className={classes.JobGrid}>
-            <GridList cellHeight={160} className={classes.gridList} cols={3}>
-              <GridListTile cols={1}>
-                <Paper className={classes.paper}>TEST</Paper>
-              </GridListTile>
-              <GridListTile cols={1}>
-                <Paper className={classes.paper}>TEST</Paper>
-              </GridListTile>
-              <GridListTile cols={1}>
-                <Paper className={classes.paper}>TEST</Paper>
-              </GridListTile>
-            </GridList>
-          </Grid>
-        </div> */}
       </div>
     );
   }
