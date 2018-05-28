@@ -4,6 +4,7 @@ HOW TO SETUP
 Both servers must be running at the same time in 2 Different Terminals!
 
 Frontend Setup/Start
+0. Remove node_modules folder before starting!!!!  with rm -r node_modules
 1. npm install
 2. npm run build 
 3. npm start    
