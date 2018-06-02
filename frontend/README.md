@@ -2,6 +2,7 @@
 
 ## Wie man es zum laufen bringt: 
 
-    cd nachbar
+    cd nachbar (in frontend)
     npm install
+    npm update
     npm start
